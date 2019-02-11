@@ -31,8 +31,8 @@ Chapter 1 Object-Oriented Design
    - wandering a maze of requirements where every juncture represents a decision point
    - Design principles and patterns are the chisels and files of an OO designer
    - 1.2.1 Design Principles
-      - **SOLID: top five most well-known principles**
-      - **DRY(Don't Repeat Yourself), LoD(the Law of Demeter)**
+      - **[SOLID](https://en.wikipedia.org/wiki/SOLID): top five most well-known principles**
+      - **[DRY(Don't Repeat Yourself)](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), [LoD(the Law of Demeter)](https://en.wikipedia.org/wiki/Law_of_Demeter)**
 	  - These were started as an opinion how to write good code
 	  - Measuring the quality of code change OOP from 'disputed opinion' into 'measurable science'.
 		  - overall size of classes
