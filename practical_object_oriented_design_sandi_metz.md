@@ -2,9 +2,9 @@ Chapter 1 Object-Oriented Design
 - The world is procedural, also object-oriented.
 - paradigm/perspective shifting from 'a collection of predefined procedures' to 'a series of messages passing between objects'
 - This chapter
-   - a general discussion of OOD
-   - the case of design, when to do it, how to judge it
-   - an overview of OOP with term definition
+   - a general discussion of OOD(1.1)
+   - the case of design(1.2), when to do it, how to judge it(1.3)
+   - an overview of OOP with term definition(1.4)
 - 1.1 In Praise of Design
    - 1.1.1 The problem Design Solves
       - with a complete and correct set of requirements, once the code written, never change
@@ -26,3 +26,27 @@ Chapter 1 Object-Oriented Design
       - application requirements / costs and benefits of design alternatives
       - Taking the future into consideration is **not anticipation of unknown future requirements**
          - leaving room to move, to allow you to de design later, to reduce the cost of change
+- 1.2 The Tools of Design
+   - not about following a fixed set of rules
+   - wandering a maze of requirements where every juncture represents a decision point
+   - Design principles and patterns are the chisels and files of an OO designer
+   - 1.2.1 Design Principles
+      - **SOLID: top five most well-known principles**
+      - **DRY(Don't Repeat Yourself), LoD(the Law of Demeter)**
+	  - These were started as an opinion how to write good code
+	  - Measuring the quality of code change OOP from 'disputed opinion' into 'measurable science'.
+		  - overall size of classes
+		  - entaglements that classes have with one another
+		  - depth/breadth of inheritance hierarchies
+		  - the number of  methods getting invoked as a result of any message sent
+	  - The research shows a definite correlation between use of these techniques and high-quality code.
+		  - Chidamber, Kemerer, Basili, 1990
+		  - Laing, Coleman, 2001
+	  - Follow the principles!
+   - 1.2.2 Design Patterns
+      - **GoF: simple and elegant solutions to specific problems**
+      - It gave all programmers the means to communicate and collaborate.
+      - Pattern abusement
+		- Pattern misapplication results in complicated and confusing code
+	  - This book is **not about patterns.**
+	  - It will **prepare you to understand them, give you the knowledge to choose/use them properly.**
