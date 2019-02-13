@@ -50,3 +50,17 @@ Chapter 1 Object-Oriented Design
 		- Pattern misapplication results in complicated and confusing code
 	  - This book is **not about patterns.**
 	  - It will **prepare you to understand them, give you the knowledge to choose/use them properly.**
+- 1.3 The Act of Design
+   - Does it get easy designing OO software with design principles/patterns? 
+      - Nop, the invention of tools doesn't guarantee good sculptures. It depends on the programmer's experience
+   - 1.3.1 How Design Fails
+      - *Yes, I can add the feature, but it will break everything.*
+	     - Successful but undesigned app carry the seeds of their own destruction, vulnerability to change.
+	  - *No, I can't add that feature; it wasn't designed to do that.*
+	     - **A little bit of knowledge is dangerous**
+		 - A programmer have heard of OOD without understanding how to apply it hem itself in complicated, beautifuls castles of code
+	  - *Well, I can certainly write this, but it's not what you really want and you will eventually be sorry.*
+	     - when the act of design is separated from the act of programming
+		 - **Design: a process of progressive discovery that relies on a feedback loop(the iterative techniques of the Agile development for OOD)**
+		    - to adjust regularly, to evolve naturally
+			- isolated design: no adjustments, early failures of understanding cemented into the code
