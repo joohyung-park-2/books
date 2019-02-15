@@ -64,3 +64,14 @@ Chapter 1 Object-Oriented Design
 		 - **Design: a process of progressive discovery that relies on a feedback loop(the iterative techniques of the Agile development for OOD)**
 		    - to adjust regularly, to evolve naturally
 			- isolated design: no adjustments, early failures of understanding cemented into the code
+   - 1.3.2 When to Design
+      - Customers cannot define the sofware they want before seeing it
+      - Agile said, the most cost-effective way to produce what customers really want is
+	     - building software on small bit at a time, alter idesa about the next
+	  - No way to predict when the app will be done
+	  - No BUFD(Bing Up Front Design, about to the third case of 1.3.1)
+	     - Desire for BUFD providing a feeling of control that would otherwise be lacking, a temporal illusion
+	     - leading to an **adversarial relationship** between customers and programmers
+		 - Any big design created in advance cannot (be correct/not meet the customer's needs).
+		 - Request of changes happens when the customer attemp to use it.
+	  
