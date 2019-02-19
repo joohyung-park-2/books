@@ -2,76 +2,107 @@ Chapter 1 Object-Oriented Design
 - The world is procedural, also object-oriented.
 - paradigm/perspective shifting from 'a collection of predefined procedures' to 'a series of messages passing between objects'
 - This chapter
-   - a general discussion of OOD(1.1)
-   - the case of design(1.2), when to do it, how to judge it(1.3)
-   - an overview of OOP with term definition(1.4)
+  - a general discussion of OOD(1.1)
+  - the case of design(1.2), when to do it, how to judge it(1.3)
+  - an overview of OOP with term definition(1.4)
 - 1.1 In Praise of Design
-   - 1.1.1 The problem Design Solves
-      - with a complete and correct set of requirements, once the code written, never change
-         - spinning plates in a world without friction or gravity
-      - Changing requirements are the programming equivalent of friction and gravity, which is unavoidable.
-         - It makes design matter.
-   - 1.1.2 Why Change Is Hard
-      - OOP: interacting objects to produce the behavior of the whole
-      - messaging properly to the correct tharget object -> the sender know things about the reveiver
-         - This knowledge creates dependencies between the two, standing in the way of change.
-      - OOP is about managing dependencies.
-         - arrange dependencies for objects to tolerate changes
-         - objects knowing too much about one another
-            - An insignificant change on one object cause no code untouched, reculsively forcing changes upon its collaborators.
-            - resist being reused in different contexts, painful to test, susceptible to being duplicated
-   - 1.1.3 A Practical Definition of Design
-      - Every application is a collection of code; **the code's arrangement is the design**.
-      - You must not only write code for the feature addressing current issue, you must also create code **amenable to being changed later**.
-      - application requirements / costs and benefits of design alternatives
-      - Taking the future into consideration is **not anticipation of unknown future requirements**
-         - leaving room to move, to allow you to de design later, to reduce the cost of change
+  - 1.1.1 The problem Design Solves
+    - with a complete and correct set of requirements, once the code written, never change
+      - spinning plates in a world without friction or gravity
+    - Changing requirements are the programming equivalent of friction and gravity, which is unavoidable.
+      - It makes design matter.
+  - 1.1.2 Why Change Is Hard
+    - OOP: interacting objects to produce the behavior of the whole
+    - messaging properly to the correct tharget object -> the sender know things about the reveiver
+      - This knowledge creates dependencies between the two, standing in the way of change.
+    - OOP is about managing dependencies.
+      - arrange dependencies for objects to tolerate changes
+      - objects knowing too much about one another
+        - An insignificant change on one object cause no code untouched, reculsively forcing changes upon its collaborators.
+        - resist being reused in different contexts, painful to test, susceptible to being duplicated
+  - 1.1.3 A Practical Definition of Design
+    - Every application is a collection of code; **the code's arrangement is the design**.
+    - You must not only write code for the feature addressing current issue, you must also create code **amenable to being changed later**.
+    - application requirements / costs and benefits of design alternatives
+    - Taking the future into consideration is **not anticipation of unknown future requirements**
+      - leaving room to move, to allow you to de design later, to reduce the cost of change
 - 1.2 The Tools of Design
-   - not about following a fixed set of rules
-   - wandering a maze of requirements where every juncture represents a decision point
-   - Design principles and patterns are the chisels and files of an OO designer
-   - 1.2.1 Design Principles
-      - **[SOLID](https://en.wikipedia.org/wiki/SOLID): top five most well-known principles**
-      - **[DRY(Don't Repeat Yourself)](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), [LoD(the Law of Demeter)](https://en.wikipedia.org/wiki/Law_of_Demeter)**
-	  - These were started as an opinion how to write good code
-	  - Measuring the quality of code change OOP from 'disputed opinion' into 'measurable science'.
-		  - overall size of classes
-		  - entaglements that classes have with one another
-		  - depth/breadth of inheritance hierarchies
-		  - the number of  methods getting invoked as a result of any message sent
-	  - The research shows a definite correlation between use of these techniques and high-quality code.
-		  - Chidamber, Kemerer, Basili, 1990
-		  - Laing, Coleman, 2001
-	  - Follow the principles!
-   - 1.2.2 Design Patterns
-      - **GoF: simple and elegant solutions to specific problems**
-      - It gave all programmers the means to communicate and collaborate.
-      - Pattern abusement
-		- Pattern misapplication results in complicated and confusing code
-	  - This book is **not about patterns.**
-	  - It will **prepare you to understand them, give you the knowledge to choose/use them properly.**
+  - not about following a fixed set of rules
+  - wandering a maze of requirements where every juncture represents a decision point
+  - Design principles and patterns are the chisels and files of an OO designer
+  - 1.2.1 Design Principles
+    - **[SOLID](https://en.wikipedia.org/wiki/SOLID): top five most well-known principles**
+    - **[DRY(Don't Repeat Yourself)](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), [LoD(the Law of Demeter)](https://en.wikipedia.org/wiki/Law_of_Demeter)**
+      - These were started as an opinion how to write good code
+      - Measuring the quality of code change OOP from 'disputed opinion' into 'measurable science'.
+        - overall size of classes
+        - entaglements that classes have with one another
+        - depth/breadth of inheritance hierarchies
+        - the number of  methods getting invoked as a result of any message sent
+      - The research shows a definite correlation between use of these techniques and high-quality code.
+        - Chidamber, Kemerer, Basili, 1990
+        - Laing, Coleman, 2001
+      - Follow the principles!
+  - 1.2.2 Design Patterns
+    - **GoF: simple and elegant solutions to specific problems**
+    - It gave all programmers the means to communicate and collaborate.
+    - Pattern abusement
+      - Pattern misapplication results in complicated and confusing code
+      - This book is **not about patterns.**
+      - It will **prepare you to understand them, give you the knowledge to choose/use them properly.**
 - 1.3 The Act of Design
-   - Does it get easy designing OO software with design principles/patterns? 
-      - Nop, the invention of tools doesn't guarantee good sculptures. It depends on the programmer's experience
-   - 1.3.1 How Design Fails
-      - *Yes, I can add the feature, but it will break everything.*
-	     - Successful but undesigned app carry the seeds of their own destruction, vulnerability to change.
-	  - *No, I can't add that feature; it wasn't designed to do that.*
-	     - **A little bit of knowledge is dangerous**
-		 - A programmer have heard of OOD without understanding how to apply it hem itself in complicated, beautifuls castles of code
-	  - *Well, I can certainly write this, but it's not what you really want and you will eventually be sorry.*
-	     - when the act of design is separated from the act of programming
-		 - **Design: a process of progressive discovery that relies on a feedback loop(the iterative techniques of the Agile development for OOD)**
-		    - to adjust regularly, to evolve naturally
-			- isolated design: no adjustments, early failures of understanding cemented into the code
-   - 1.3.2 When to Design
-      - Customers cannot define the sofware they want before seeing it
-      - Agile said, the most cost-effective way to produce what customers really want is
-	     - building software on small bit at a time, alter ideas about the next
-	  - No way to predict when the app will be done
-	  - No [BUFD](https://en.wikipedia.org/wiki/Big_Design_Up_Front)(Bring Up Front Design, about to the third case of 1.3.1)
-	     - Desire for BUFD providing a feeling of control that would otherwise be lacking, a temporal illusion
-	     - leading to an **adversarial relationship** between customers and programmers
-		 - Any big design created in advance never (be correct/meet the customer's needs).
-		 - Request of changes happens when the customer attempt to use it.
-	  
+  - Does it get easy designing OO software with design principles/patterns? 
+    - **Nop**, the invention of tools doesn't guarantee good sculptures. It depends on the programmer's experience
+  - 1.3.1 How Design Fails
+    - *Yes, I can add the feature, but it will break everything.*
+      - Successful but undesigned app carry the seeds of their own destruction, vulnerability to change.
+    - *No, I can't add that feature; it wasn't designed to do that.*
+      - **A little bit of knowledge is dangerous**
+      - A programmer have heard of OOD without understanding how to apply it hem itself in complicated, beautifuls castles of code
+    - *Well, I can certainly write this, but it's not what you really want and you will eventually be sorry.*
+      - when the act of design is separated from the act of programming
+      - **Design: a process of progressive discovery that relies on a feedback loop(the iterative techniques of the Agile development for OOD)**
+        - to adjust regularly, to evolve naturally
+        - isolated design: no adjustments, early failures of understanding cemented into the code
+  - 1.3.2 When to Design
+    - Customers cannot define the sofware they want before seeing it
+    - Agile said, the most cost-effective way to produce what customers really want is
+      - building software on small bit at a time, alter ideas about the next
+    - No way to predict when the app will be done
+    - No [BUFD](https://en.wikipedia.org/wiki/Big_Design_Up_Front)(Bring Up Front Design, about to the third case of 1.3.1)
+      - Desire for BUFD providing a feeling of control that would otherwise be lacking, a temporal illusion
+      - leading to an **adversarial relationship** between customers and programmers
+      - Any big design created in advance never (be correct/meet the customer's needs).
+      - Request of changes happens when the customer attempt to use it.
+    - Missing the delivery deadline even due to the spec changes: programmer's fault
+    - Missing the spec not fulfilling the actual need: customer's fault
+      - BUFD scrambling defense **against being the person who ends up holding the hot potato of blame**
+    - Agile
+      - accepts the handicap: **unavoidable uncertainty** in advance of the app's existence
+      - provides strategies to overcome the handicap while **knowing neither the target nor the timeline**
+    - Design of BUFD
+      - completely specifying / totally documenting the every feature inside
+      - design matters how to arrange all of the code
+    - Design of Agile
+      - without well-designed code, you should rewrite your app during every iteration.
+      - design matters for code to be flexible enough against changes
+  - 1.3.3 Judging Design
+    - SLOC: to measure programmers' effort and app complexity
+      - limitation: altering the reward structure in ways that harm quality
+    - OOD metric: how well code follows OOD principles
+      - seemingly well-designed app racking up impressive numbers of OOD violcations
+      - more poorly scored code, harder to change
+      - limitation: beautiful OOD with good score, but over-anticipating the future
+        - do the wrong thing in the right way
+    - the ultimate metric? (cost/feature) / time interval
+      - difficulty to define, track, and measure each paramaters
+    - **the time interval**
+      - **you must do the best you can in the time you have.**
+      - **borrowing time from the future is taking on technical debt.**
+      - design decision depends on your skils and your timeframe.
+        - no value on design preventing on-time delivery
+        - delivering half of a well-desinged app == delivering no app at all
+    - The break-even point for design
+      - **inexperienced programmers doing a lot of anticipatory design**
+        - **never reach a point where their earlier design efforts pay off**
+    - **The remainder of this book teaches skills you can use to shift the break-even point in your favor.**
