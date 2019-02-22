@@ -106,3 +106,38 @@ Chapter 1 Object-Oriented Design
       - **inexperienced programmers doing a lot of anticipatory design**
         - **never reach a point where their earlier design efforts pay off**
     - **The remainder of this book teaches skills you can use to shift the break-even point in your favor.**
+- 1.4 A Brief Introduction to OOP
+  - Importance: Messages > Object
+  - 1.4.1 Procedural Languages
+    - Any function do anything to data followed by unpredictable influnces
+  - 1.4.2 OO Languages
+    - object
+      - behavior + data to which they alone control access(encapsultation)
+      - deciding how mich of its data to expose
+      - an instance of an class
+    - message
+      - invoke objects' behavior
+    - class
+      - abstraction of identical behavior(methods) / of variables(attributes)
+    - **Knowing an object's type lets you have expectations about the messages to which it responds.**
+
+Chapter 2 Designing Classes with a Signle Reponsibility
+- **The foundation of an OO system is the message, the core of design.**
+- The quality of easy changeability reveals the craft of programming.
+- Much research ha gone into indentifying the qualities.
+- 2.1 Deciding What Belongs in a Class
+  - The problem is not one of technical knowledge but of organization
+    - you know how to write the code but not where to put it.
+  - 2.1.1 Grouping Methods into Classes
+    - decisions you make today will need to be changed later.
+    - Design is more the art of preserving changeability thatn ti is the act of achieving perfection.
+  - 2.1.2 Organizing Code to Allow for Easy Changes
+    - **T**ransparent
+      - The consequences of change should be obcious in the code that is changing and in distant code that relies upon it.
+    - **R**easonable
+      - The cost of any change should be proportional to the benefits the change achieves.
+    - **U**sable
+      - Existing cocde should be usable in new and unexpected contexts.
+    - **E**xemplary
+      - The code itself should encourage those who change it to perpetuate these qualites.
+    - The first step in creating code that is TRUE is to ensure that each class has a single, well-defined reponsibility.
