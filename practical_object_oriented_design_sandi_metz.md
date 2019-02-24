@@ -130,14 +130,18 @@ Chapter 2 Designing Classes with a Signle Reponsibility
     - you know how to write the code but not where to put it.
   - 2.1.1 Grouping Methods into Classes
     - decisions you make today will need to be changed later.
-    - Design is more the art of preserving changeability thatn ti is the act of achieving perfection.
+    - Design is more the art of preserving changeability than it is the act of achieving perfection.
   - 2.1.2 Organizing Code to Allow for Easy Changes
     - **T**ransparent
-      - The consequences of change should be obcious in the code that is changing and in distant code that relies upon it.
+      - **no side effects** unexpected
+      - The consequences of change should be **obvious** in the code that is changing and in distant code that relies upon it.
     - **R**easonable
-      - The cost of any change should be proportional to the benefits the change achieves.
+      - small requirement changes, small code changes
+      - The cost of any change should be **proportional** to the benefits the change achieves(meeting requirement changes).
     - **U**sable
-      - Existing cocde should be usable in new and unexpected contexts.
+      - reusable existing code
+      - Existing code should be **usable in new and unexpected contexts**.
     - **E**xemplary
-      - The code itself should encourage those who change it to perpetuate these qualites.
+      - existing code should be an good example for new code
+      - The code itself should encourage those who change it to perpetuate these qualites.([example](https://hashrocket.com/blog/posts/in-conversation-sandi-metz))
     - The first step in creating code that is TRUE is to ensure that each class has a single, well-defined reponsibility.
