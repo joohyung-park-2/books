@@ -1,4 +1,4 @@
-Chapter 1 Object-Oriented Design
+Chapter 1 Object-Oriented Design
 - The world is procedural, also object-oriented.
 - paradigm/perspective shifting from 'a collection of predefined procedures' to 'a series of messages passing between objects'
 - This chapter
@@ -145,3 +145,27 @@ Chapter 2 Designing Classes with a Signle Reponsibility
       - existing code should be an good example for new code
       - The code itself should encourage those who change it to perpetuate these qualites.([example](https://hashrocket.com/blog/posts/in-conversation-sandi-metz))
     - The first step in creating code that is TRUE is to ensure that each class has a single, well-defined reponsibility.
+- 2.2 Creating Classes That Have a Single Responsibility
+  - 2.2.1 [An Example Application:Bicycles and Gears](https://oss.navercorp.com/joohyung-park/practical-object-oriented-design/commit/b0402d512e054d2e2f7ed1443e78ae345fe33b88)
+  - 2.2.2 Why Single Responsibility Matters
+    - If the various reponsibilities are likely thoroughly entangled within the class,
+      - Impossible to use just the behavior you need -> code duplication(AKA ctrl-c/v) -> additional maintenance -> bug oriented design
+      - Change for a reason unrelated to your use -> breaking more classes depedning on it -> inclease app's chance of breaking unexpectedly
+  - 2.2.3 Determining If a Class Has a Single Responsibility
+    - Describe what a class is actually doing in one sentence without 'or/and'!!
+    - Highly cohesive: to have a single responsibility
+    - Responsibility-Driven Design(RDD) by Brian Wilkerson
+      - not about a class do only one very narrow thing, but do things highly related to its purpose
+  - 2.2.4 Determining When to Make Design Decisions
+    - *improve it now*
+      - You are wasting a lot of time between design alternatives before rolling the dice and choosing the wrong one.
+      - The ugly Gear class is both *transparent* and *reasonable*, if there's **no dependency**.
+      - The new dependencies will supply the exact information you need to make good design decisions.
+      - **Make the secision only when you must with the information you have at that time.**
+    - *improve it later*
+      - Someone will reuse Gear or create new code that follows its pattern while you are waiting for better information.
+        - They believe the Gear code is intended to be as it is.
+    - No design perfection, every choice has a price.
+    - Try **to minimize costs** by making tradeoff
+- 2.3 Writing Code That Embraces Change
+  - 2.3.1 [Depend on Behavior, Not Data](https://oss.navercorp.com/joohyung-park/practical-object-oriented-design/commit/0ee28a946a805921318177c44444e57c2f60f5bc)
