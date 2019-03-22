@@ -1,4 +1,4 @@
-Chapter 1 Object-Oriented Design
+Chapter 1 Object-Oriented Design
 - The world is procedural, also object-oriented.
 - paradigm/perspective shifting from 'a collection of predefined procedures' to 'a series of messages passing between objects'
 - This chapter
@@ -169,3 +169,20 @@ Chapter 2 Designing Classes with a Signle Reponsibility
     - Try **to minimize costs** by making tradeoff
 - 2.3 Writing Code That Embraces Change
   - 2.3.1 [Depend on Behavior, Not Data](https://oss.navercorp.com/joohyung-park/practical-object-oriented-design/commit/0ee28a946a805921318177c44444e57c2f60f5bc)
+
+Chapter 3 Managing Dependencies
+- A single object cannot know everything, so inevitably it will have to talk to another object
+- For any desired behavior
+  - an object knows it personally(ch 2)
+  - an object inherits it(ch 6)
+  - an object knows another object who knows it(ch 3)
+- Knowing(dependency) must be managed carefully
+- 3.1 Understanding Dependencies
+  - 3.1.1 Recognizing Dependencies
+    - Four dependecies on this line, "Wheel.new(rim, tire).diameter"
+      - expecting a class named Wheel
+      - expecting a Wheel instance to respond to diameter
+      - expecting a Wheel.new requires a rim and a tire
+      - expecting a Wheel takes a rim as the first argument, and a tire as the second one
+    - most of the dependencies listed above are unnecessary
+    - manage dependencies so that each class has the fewest possible
