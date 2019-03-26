@@ -1,6 +1,6 @@
 books
 - Reading:
-  - https://www.amazon.com/Practical-Object-Oriented-Design-Agile-Primer-ebook/dp/B07F88LY9M
+  - [OOP](https://www.amazon.com/Practical-Object-Oriented-Design-Agile-Primer-ebook/dp/B07F88LY9M)
 - ToRead:
   - Distributed System:
     - [general discussion](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable-ebook/dp/B06XPJML5D/ref=sr_1_3?keywords=distributed+system&qid=1553583332&s=digital-text&sr=1-3)
