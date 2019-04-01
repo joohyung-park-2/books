@@ -4,7 +4,7 @@ books
   - Concurrency Model: 
     - [general discussion](https://www.amazon.com/s?k=seven+concurrency+models+in+seven+weeks&i=stripbooks&crid=1KHAXRULLAPXN&sprefix=seven+concurrency%2Cdigital-text%2C338&ref=nb_sb_ss_fb_1_17)
     - [actor model](https://www.amazon.com/Programming-Erlang-Concurrent-Pragmatic-Programmers-ebook/dp/B00I9GR4TW/ref=sr_1_1?keywords=erlang+programming&qid=1553583246&s=digital-text&sr=1-1)
-- [Memory safe(Onwership) low-level programming](https://www.amazon.com/Rust-Programming-Language-Steve-Klabnik-ebook/dp/B071YKRV8Q/ref=sr_1_1?keywords=rust+programming&qid=1553583263&s=digital-text&sr=1-1)
+- [Memory safe(Ownership) low-level programming](https://www.amazon.com/Rust-Programming-Language-Steve-Klabnik-ebook/dp/B071YKRV8Q/ref=sr_1_1?keywords=rust+programming&qid=1553583263&s=digital-text&sr=1-1)
 - Programming Paradigm:
   - [OOP](https://www.amazon.com/Practical-Object-Oriented-Design-Agile-Primer-ebook/dp/B07F88LY9M)
   - [Data Oriented contrast to OO](https://www.amazon.com/Data-oriented-design-engineering-resources-schedules-ebook/dp/B07J4ZTBY8/ref=sr_1_1?keywords=data+oriented+design&qid=1553583281&s=digital-text&sr=1-1)
