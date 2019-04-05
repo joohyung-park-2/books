@@ -186,3 +186,15 @@ Chapter 3 Managing Dependencies
       - expecting a Wheel takes a rim as the first argument, and a tire as the second one
     - most of the dependencies listed above are unnecessary
     - manage dependencies so that each class has the fewest possible
+  - 3.1.2 Coupling Between Objects(CBO)
+    - When two or more objects are so tightly coupled that theey behave as a unit
+	  - impossible to reuse just one
+	  - changes to one object force changes to all
+  - 3.1.3 Other Dependencies
+    - Law of Demeter violation(ch 4)
+	  - an object knowing another knowing another knowing something: message chaining
+	  - a dependency betrween the original object and every object and meesage along the way to the target
+	  - the 1st might be forced to change because of any changes on intergmediate objects
+	- Tests too tightly coupled to code(ch 9)
+	  - Tests come first driving design
+	  - broken by code refactoring
