@@ -188,13 +188,45 @@ Chapter 3 Managing Dependencies
     - manage dependencies so that each class has the fewest possible
   - 3.1.2 Coupling Between Objects(CBO)
     - When two or more objects are so tightly coupled that theey behave as a unit
-	  - impossible to reuse just one
-	  - changes to one object force changes to all
+      - impossible to reuse just one
+      - changes to one object force changes to all
   - 3.1.3 Other Dependencies
     - Law of Demeter violation(ch 4)
-	  - an object knowing another knowing another knowing something: message chaining
-	  - a dependency betrween the original object and every object and meesage along the way to the target
-	  - the 1st might be forced to change because of any changes on intergmediate objects
-	- Tests too tightly coupled to code(ch 9)
-	  - Tests come first driving design
-	  - broken by code refactoring
+      - an object knowing another knowing another knowing something: message chaining
+      - a dependency betrween the original object and every object and meesage along the way to the target
+      - the 1st might be forced to change because of any changes on intergmediate objects
+    - Tests too tightly coupled to code(ch 9)
+      - Tests come first driving design
+      - broken by code refactoring
+- **3.2 Writing Loosely Coupled Code: TBD**
+- **3.3 Managing Dependency Direction: TBD**
+
+Chapter 4 Creating Flexible Interfaces
+- Design corncerned with
+  - static things
+    - what's in your code: objects
+    - what objects know: their responsibilities(ch 2)
+    - what they know: their dependencies(ch 3)
+    - all about details
+  - dynamic things
+    - how they talk to one another: interfaces
+    - Flexible interfaces allow app to grow and to change.(ch 4)
+- 4.1 Understanding Interfaces
+  - An object exposes too much interfaces make others knowing too much about itself
+  - Interface
+    - methods within a class in a narrow sense
+    - specification defining methods across any classes in a broad sense
+- 4.2 Defining Interfaces
+  - 4.2.1 Public Interfaces
+    - object specification
+    - Reveal jits primary responsibility
+      - expected to be invoked by others
+    - Will no  change on a whim
+      - safe for others to depend on
+    - Thoroughly documented in the tests
+  - 4.2.2 Private Interfaces
+    - Handle implementation details
+    - not expected to be sent by others
+      - changale, unsafe, not be referenced by the tests
+  - 4.2.3 Responsibilities, Dependencies, and Interfaces
+    - scope: guaranteeing the safeness
