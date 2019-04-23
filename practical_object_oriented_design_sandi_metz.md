@@ -230,3 +230,22 @@ Chapter 4 Creating Flexible Interfaces
       - changale, unsafe, not be referenced by the tests
   - 4.2.3 Responsibilities, Dependencies, and Interfaces
     - scope: guaranteeing the safeness
+- 4.3 Finding the Public Interface
+  - 4.3.1 An Example Application: Bicycle Touring Company
+    - Trip
+      - Date
+        - N times per a year
+      - Route
+        - Aerobic/technical difficulty
+      - M customers
+        - Aerobic/technical skill level
+      - L guides(mechanics)
+      - Bikes for rent
+    - Required spec
+      - A customer
+        - in order to choose a trip
+        - would like to see a list of available trips
+          - appropriate difficulty
+          - on a specific date where rental bikes available
+  - 4.3.2 Constructing an Intention
+  - 4.3.3 Using Sequence Diagrams
