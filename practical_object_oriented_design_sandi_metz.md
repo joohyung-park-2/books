@@ -248,4 +248,15 @@ Chapter 4 Creating Flexible Interfaces
           - appropriate difficulty
           - on a specific date where rental bikes available
   - 4.3.2 Constructing an Intention
+    - Writing test requires an idea about what you want to test
+    - Domain objects
+      - obvious because they are persistent
+      - standing for big, visible real-world things
+      - easy to find -> trap for the unwary
+        - tend to coerce behavior into the real world objects
+      - expects just notice them without concentration on them
+        - they focus not on these objects, but on the messages between them
+        - messages lead you to discover other necessary objects
+    - To form an intention about the objects and the messages
+      - a simple, inexpensive, communication-enhancing way to explore design required(ch 4.3.3)
   - 4.3.3 Using Sequence Diagrams
