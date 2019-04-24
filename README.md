@@ -13,3 +13,4 @@ books
   - [general discussion](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure-ebook/dp/B075LRM681/ref=pd_sim_351_2/142-8338508-6318026?_encoding=UTF8&pd_rd_i=B075LRM681&pd_rd_r=5ba2f0b9-4f94-11e9-8fca-498b2e74bb68&pd_rd_w=p5wdK&pd_rd_wg=BpfxQ&pf_rd_p=90485860-83e9-4fd9-b838-b28a9b7fda30&pf_rd_r=8MVGSTJP8YV0NPD4X15Z&psc=1&refRID=8MVGSTJP8YV0NPD4X15Z)
 - Virtualization
   - [ERTS](https://blog.stenmans.org/theBeamBook/)
+  - [Docker/Kubernetes](https://pages.oss.navercorp.com/naver-container-cluster/docs/0/2.orchestration/)
