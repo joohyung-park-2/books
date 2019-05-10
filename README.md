@@ -14,3 +14,6 @@ books
 - Virtualization
   - [ERTS](https://blog.stenmans.org/theBeamBook/)
   - [Docker/Kubernetes](https://pages.oss.navercorp.com/naver-container-cluster/docs/0/2.orchestration/)
+- Go
+  - [FP in Go](https://www.amazon.com/Learning-Functional-Programming-applications-programming-ebook/dp/B0725B8MYW/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1557454176&sr=8-1)
+  - [Concurrency in Go](https://www.amazon.com/Concurrency-Go-Tools-Techniques-Developers/dp/1491941197/ref=sr_1_1?keywords=concurrency+in+go&qid=1557454980&s=gateway&sr=8-1)
