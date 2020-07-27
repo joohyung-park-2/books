@@ -133,6 +133,12 @@
     - Data on heap is **represented on the stack / controlled by the rules of ownership**
   - makes the rust compiler **when to allocate/deallocate memory entirely deterministic at compile time**
 - 3.2. Transferring
+  - old scope loose the variable, following the ownership transfer
+    - compile errors on any accesses on the transferred var from old scope
+  - callee -> caller: function parameters
+  - caller -> callee: function returns
+  - assigning a value to a structure member
+    - https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=8fdf566ad59cf6745eaefc46f7f54792
 - 3.3. Copying
 - 3.4. Referencing
   - 3.4.1. Referencing immutably
