@@ -124,9 +124,14 @@
   - implementation block(not a block expression): impl XXX {}
     - Function implementation on type we didn't create -> only if we create a trait
     - able to impl funcs on created data types within the same **project**, without using traits
-### Ch3. The Big Ideas: Ownershipt and Borrowing
-- 3.1. Scopre and ownership
+### Ch3. The Big Ideas: Ownership and Borrowing
+- 3.1. Scope and ownership
+  - Scope: the chunk of memory where the block's variables are stored
+    - A scope owns the block variables, i.e., it has ownerships of those variables
+    - Liftime: since created, till **the owner scope done**
   - 3.1.1. The stack
+    - Data on heap is **represented on the stack / controlled by the rules of ownership**
+  - makes the rust compiler **when to allocate/deallocate memory entirely deterministic at compile time**
 - 3.2. Transferring
 - 3.3. Copying
 - 3.4. Referencing
