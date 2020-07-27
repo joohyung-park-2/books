@@ -96,16 +96,34 @@
         - 3..7: range expression, represents the values 3~6, except 7
       - ("abc", 2) tuple is not a iterator
 - 2.4. Variables, types, and mutability
+  - Compile error with unbounded vairables
+  - By default, vairables are immutable, but mutable variables
+  - Shadowing: multiple let statements with the same name
+    - blocks new references to the old variable
   - 2.4.1. Type inference
 - 2.5. Data structures
+  - As like Golang, the final comma is recommended
+  - unpulished members can be accessed 
+    - only within the defined module directly
+    - or by the public getter function
   - 2.5.1. Mutability of data structures
 - 2.6. More about functions
   - 2.6.1. Parameters
   - 2.6.2. Return types
+    - A function call is an expression, producing a result via 'return' or final expression
   - 2.6.3. Error handling
+    - Result<success result, error> type
     - 2.6.3.1. Using Result to signal succes or failure
+      - OK(()) -> Result<(), &'static str>
     - 2.6.3.2. Calling functions that return Result
+      - ?: extracts the stored value from a successful Result, or returns the 'Result'
+        - the return type of callee should be same as **Result<sth, same error type>**
+      - expect: same as '?' for success, but terminate the program printing out an err msg
+      - etc: calling an error handling function
 - 2.7. Implementing behavior for types
+  - implementation block(not a block expression): impl XXX {}
+    - Function implementation on type we didn't create -> only if we create a trait
+    - able to impl funcs on created data types within the same **project**, without using traits
 ### Ch3. The Big Ideas: Ownershipt and Borrowing
 - 3.1. Scopre and ownership
   - 3.1.1. The stack
