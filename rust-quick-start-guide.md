@@ -158,6 +158,16 @@
     - the reference is finished, the owner regains control of the data
 - 3.5. Accessing referenced data
 - 3.6. The lifetime of referenced data
+  - The rust compiler **has to keep track of the lifetime of every borrow.**
+  - var creation -> begin reference -> end reference -> owner scope done
+  - named lifetime
+    - 'static : special lifetime as long as the program is running 
+    - never change the actual lifetime of a borrow
+  - example of named lifetime
+    - define lifetime via function generic parameter
+    - include referenced function parameters
+      - name lifetime is the **intersection**(wholly contained within) of all lifetimes of included parameters
+    - return a reference with the named lifetime
 
 ## Sample codes
 ### 2.2.1.1
