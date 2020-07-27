@@ -132,17 +132,30 @@
   - 3.1.1. The stack
     - Data on heap is **represented on the stack / controlled by the rules of ownership**
   - makes the rust compiler **when to allocate/deallocate memory entirely deterministic at compile time**
-- 3.2. Transferring
+- 3.2. Transferring: value copy of its type without copy trait
+  - receiver becomes the new owner
   - old scope loose the variable, following the ownership transfer
     - compile errors on any accesses on the transferred var from old scope
   - callee -> caller: function parameters
   - caller -> callee: function returns
   - assigning a value to a structure member
     - https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=8fdf566ad59cf6745eaefc46f7f54792
-- 3.3. Copying
+- 3.3. Copying: value copy of its type with copy trait
+  - receiver owns the duplicate, sender retains ownership of the original
+  - privimitive types: no references within it, the bytes representing itself fully
+    - do not rely on ownership at all => Copy trait
 - 3.4. Referencing
+  - sender retains ownership, but receiver allowed to reference the data
+    - the sending scope ends -> the data go away
+    - the receiver get the memory address **on the stack**
+  - any referenced information must be returned before the owning scopes's time is up
+  - referencing data never be changed by the owner, even if itself it mutable.
+    - ever mutate in one place at a time at most
+    - **mutable never in use elsewhere**
   - 3.4.1. Referencing immutably
   - 3.4.2. Referencing mutably
+    - exclusiveness of mutable reference: the mut reference is the only way to modify the referenced data
+    - the reference is finished, the owner regains control of the data
 - 3.5. Accessing referenced data
 - 3.6. The lifetime of referenced data
 
