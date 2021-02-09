@@ -1,0 +1,25 @@
+### Ch.1 함수형 길들이기
+- OO makes code understandable by encapsulating moving parts. FP makes code understandable by minimizing moving parts. by Michael Feathers
+- 1.1. FP 유용성
+  - JS는 상태관리가 개발자 책임, 동적인 플랫폼 -> 버그 양산
+    - FP가 해결책
+- 1.2. FP?
+  - Abstration of data control flows / operations
+    - reducing side effects / state mutation
+  - A chain of reusable, reliable, and smaller components
+  - function(code) parameterization
+  - 1.2.1. Decralative programming
+    - description(by expression) seperated from evaluation(by control flow / state mutation)
+	- lambda expression / arrow function since ES6: a replacement of anonymous function
+	- stateless, immutable, aka pure fuction
+  - 1.2.2. Pure function and Side effects
+    - no dependency, but inputs
+	- Known side effects
+	  - Mutation on global scoped states
+	  - Mutation on function argumnets
+	  - User input processing?
+	  - Throw without catch by the function firing exception
+	  - Output on stdout / files
+	  - DB querying
+	- 
+  - 1.2.3.
